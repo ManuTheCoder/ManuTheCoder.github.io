@@ -179,11 +179,63 @@ text-align:center;
                 width: 20%;
 
        }
-	   .card a:hover {
+       footer a {
+       color: #2be4ea;
+       display: block;
+       width: 100%;
+       }
+	   .card a:hover,.footer a:hover {
   background-color: var(--colors-bg--500);
   /*color: var(--colors-on_primary--500);*/
 }
+.row {
+width: 100%
+}
+.column {
+  float: left;
+}
 
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background: rgba(255,255,255,.1);
+  min-height: 210px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .card {
+  width: 100%
+}
 	   
    </style>
 </head>
@@ -251,4 +303,31 @@ text-align:center;
 	      <a href="https://codepen.io/ManuTheCoder/pen/OJRoBrO">Visit the website</a>
       </div>
    </div>
+   
+   <footer>
+   <div class="row">
+      <h4 style="background:rgba(255,255,255,.1);padding: 20px;margin: 0;">ManuTheCoder</h4>
+
+  <div class="column">
+  <h5>Links</h5>
+  <a href="https://homebase.rf.gd">Homebase</a>
+  <a href="https://todoapp.rf.gd">Todolist</a>
+  <a href="https://sjscustomcakes.rf.gd">SJ'S Custom Cakes</a>
+  </div>
+  <div class="column">
+  <h5 style="opacity:0">Links</h5>
+  <a href="https://todoapp.rf.gd/dev">CodeTricks</a>
+    <a href="https://todoapp.rf.gd/framework/beta ">Material Design Pro</a>
+
+  </div>
+  <div class="column">
+   <h5 style="opacity:0">Links</h5>
+<input type="text" style="width: 100%" placeholder="Subscribe to my newsletter! ">
+<button>Subscribe! </button>
+  </div>
+</div>
+<div style="text-align:center;color:white;padding: 3px;background: rgba(0,0,0,0.3)">
+  <p >&copy; ManuTheCoder</p>
+  </div>
+   </footer>
 </body>
