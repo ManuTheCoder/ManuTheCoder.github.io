@@ -113,6 +113,19 @@ text-align:center;
   width: var(--ui-notch-hypotenuse);
   z-index: 100;
 }
+	   .c-lang::before {
+  background-color: #2be4ea !important;
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 3px; /* bigger to compensate transform */
+  position: absolute;
+  right: -6px;
+  top: auto;
+  transform: rotate(-45deg);
+  width: var(--ui-notch-hypotenuse);
+  z-index: 100;
+}
 	 button,footer input {
      
      background: transparent;
@@ -133,7 +146,7 @@ background: #fed33f
      footer input {
      cursor: text
      }
-	   .c-lang {
+	   .c-lang,.c-lang * {
 		border-color: #2be4ea !important;
 		   color: #2be4ea !important
 	   }
