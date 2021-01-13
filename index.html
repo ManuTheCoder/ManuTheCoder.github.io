@@ -155,10 +155,36 @@ text-align:center;
 			width: 0;
 		   }
 	   }
+       input:before {
+  background-color: red;
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 3px; /* bigger to compensate transform */
+  position: absolute;
+  right: -6px;
+  top: auto;
+  transform: rotate(-45deg);
+  width: var(--ui-notch-hypotenuse);
+  z-index: 100;
+}
+       input {
+       	        clip-path: var(--ui-notch-path);
+                padding: 10px;
+                background: rgba(255,100,100,.1);
+                border: /*1px solid red;*/0;
+                outline: 0;
+                color: #2be4ea;
+                margin-top: -6px;
+                width: 20%;
+
+       }
 	   .card a:hover {
   background-color: var(--colors-bg--500);
   /*color: var(--colors-on_primary--500);*/
 }
+
+	   
    </style>
 </head>
 <body translate="no" >
@@ -170,6 +196,7 @@ text-align:center;
       <a href="http://github.com/manuTheCoder">Github</a>
 	   <a href="#projects">Projects</a>
 	   <a href="#projects">Contact Me!</a>
+       <input style="float:right" placeholder="Search...">
    </nav>
    <div class="header">
       <img src="https://i.ibb.co/gmVN8ns/Screenshot-2021-01-04-at-7-13-20-PM.png" style="width: 100px;float:right;margin-left: -10px;">
