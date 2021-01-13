@@ -92,16 +92,24 @@
       }
       .card {
       border: 1px solid #fed33f;
-	      clip-path: polygon(
-    0.25em 0,
-    calc(100% - 1em) 0,
-    100% 100%,
-    0.33em 100%,
-    0 100%,
-    0 0.25em
-  );
+	        clip-path: var(--ui-notch-path);
+
 	      width: 30%
       }
+	   .card::before {
+  background-color: var(--colors-primary--600);
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 3px; /* bigger to compensate transform */
+  position: absolute;
+  right: -6px;
+  top: auto;
+  transform: rotate(-45deg);
+  width: var(--ui-notch-hypotenuse);
+  z-index: 100;
+}
+	   
 	   .card h2 {
 		margin: 20px;   
 	   }
