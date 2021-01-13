@@ -73,22 +73,41 @@
       nav {
       width: 98%;
       max-width: 100vw;
+      
       overflow: hidden;
-      border-bottom: 3px solid var(--colors-primary--500);
       padding: 10px;
 	/*box-shadow: 0 0 5px var(--colors-primary--500);*/
-      margin: 10px;
       text-align: center;
       }
+      nav::after {
+  background-color: var(--colors-primary--500);
+  box-shadow: var(--ui-glow);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
       nav a {
-      color: #2be4ea;
+  color: var(--colors-primary--300);
       text-decoration: none;
       display: inline-block;
       position: relative;
 		  margin: 5px;
-      top: -5px;
+          padding: 10px;
       left: -5px;
       }
+      .active {
+        text-shadow: var(--ui-glow-text);
+  color: var(--colors-secondary--500);
+
+}
+nav a:hover {
+  color: var(--colors-primary--200);
+
+}
       .header {
       padding: 10px;
       }
@@ -204,6 +223,9 @@ background: #fed33f
   width: var(--ui-notch-hypotenuse);
   z-index: 100;
 }
+.c-lang:hover {
+  background-color: var(--colors-secondary--900);
+}
        nav input {
        	        clip-path: var(--ui-notch-path);
                 padding: 10px;
@@ -211,7 +233,7 @@ background: #fed33f
                 border: /*1px solid red;*/0;
                 outline: 0;
                 color: #2be4ea;
-                margin-top: -6px;
+                margin-top: 5px;
                 width: 20%;
 
        }
@@ -280,7 +302,7 @@ width: 100%
 	<div class="ssr"></div>
    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
    <nav>
-      <a href="https://manuthecoder.github.io/#" style="float: left;text-align:left">ManuTheCoder</a>
+      <a href="https://manuthecoder.github.io/#" style="float: left;text-align:left" class="active">ManuTheCoder</a>
       <a href="http://github.com/manuTheCoder">Github</a>
 	   <a href="#projects">Projects</a>
 	   <a href="#projects">Contact Me!</a>
@@ -361,7 +383,7 @@ width: 100%
    
    <footer>
    <div class="row">
-      <h4 style="background:rgba(255,255,255,.1);padding: 20px;margin: 0;">ManuTheCoder</h4>
+      <h4 style="background:rgba(255,255,255,.1);padding: 20px;margin: 0;" >ManuTheCoder</h4>
 
   <div class="column">
   <h5>Links</h5>
