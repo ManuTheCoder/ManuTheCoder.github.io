@@ -91,12 +91,23 @@
       padding: 10px;
       }
       .card {
-      border: 1px solid var(--colors-primary--800);
+      border: 1px solid #fed33f;
       }
 	.ssl {
 		position: fixed;
 		top: 0;
+		z-index: 999999;
 		left: -20%;
+		background: var(--colors-primary--800);
+		animation: ssl 1s forwards linear;
+		height: 100%;
+		width: 60%;
+	   }
+	   .ssr {
+		position: fixed;
+		top: 0;
+		right: -20%;
+		z-index: 999999;
 		background: var(--colors-primary--800);
 		animation: ssl 1s forwards linear;
 		height: 100%;
