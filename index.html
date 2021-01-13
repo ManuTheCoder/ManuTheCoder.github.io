@@ -63,7 +63,7 @@
       background-color: var(--colors-bg--500);
       background-image: radial-gradient(ellipse at 33% 10%, #461616 0%, transparent 75%);
       background-repeat: no-repeat;
-      color: #2be4ea;
+  color: var(--colors-primary--300);
       font-family: var(--fonts-primary);
       font-size: 100%;
       line-height: 1.4;
@@ -113,7 +113,7 @@ nav a:hover {
       padding: 10px;
       }
       .card,button {
-      border: 2px solid #fed33f;
+      border: 2px solid #5d2322;
 	      display: inline-block;
 	      margin: 3px;
 	        clip-path: var(--ui-notch-path);
@@ -121,7 +121,7 @@ text-align:center;
 	      width: 30%
       }
 	   .card::before,button:before {
-  background-color: #fed33f;
+  background-color: #5d2322;
   bottom: 5px;
   content: "";
   display: block;
@@ -172,7 +172,7 @@ background: #fed33f
 	   }
 	   .card h2,.card p,.card a {
 		margin: 20px;   
-		   color: #fed33f;
+		 color: currentColor
 	   }
 	   .card a {
 		   text-decoration: none;
@@ -203,6 +203,7 @@ background: #fed33f
 		height: 100%;
 		width: 100vw;
 	   }
+      
 	   @keyframes ssl {
 		0% {
 		   width: 100vw
