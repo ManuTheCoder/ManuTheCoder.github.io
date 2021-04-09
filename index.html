@@ -1,721 +1,432 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>ManuTheCoder</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="ManuTheCoder - About me and my projects">
-   <meta name="author" content="ManuTheCoder">
-	<meta name="google-site-verification" content="wtj0dI20-cfmOVtvcoMbB9eYHmSR9XXvr0fNgeUAxTc" />
-   <meta property="og:site_name" content="manuthecoder.github.io/" />
-   <meta property="og:title" content="ManuTheCoder" />
-	<meta name="google-site-verification" content="wtj0dI20-cfmOVtvcoMbB9eYHmSR9XXvr0fNgeUAxTc" />
-   <meta property="og:type" content="website" />
-   <meta property="og:image" content="https://i.ibb.co/JmkZPzw/depositphotos-6096843-stock-illustration-circuit-board-vector-background-2.jpg">
-   <meta property="og:description" content="ManuTheCoder - About me and my Projects" />
-   <meta property="og:url" content="manuthecoder.github.io/" />
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:site" content="@ManuTheCoder">
-   <meta name="twitter:title" content="ManuTheCoder">
-   <meta name="twitter:description" content="ManuTheCoder - About me and my Projects">
-   <meta name="twitter:image:src" content="https://i.ibb.co/JmkZPzw/depositphotos-6096843-stock-illustration-circuit-board-vector-background-2.jpg">
-   <meta name="twitter:domain" content="manuthecoder.github.io">
-<link rel="shortcut icon" href="https://i.ibb.co/MS8YytL/Screenshot-2021-02-12-at-11-18-16-AM-1.png">
-<link rel="favicon" href="https://i.ibb.co/MS8YytL/Screenshot-2021-02-12-at-11-18-16-AM-1.png">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" integrity="sha512-RdSPYh1WA6BF0RhpisYJVYkOyTzK4HwofJ3Q7ivt/jkpW6Vc8AurL1R+4AUcvn9IwEKAPm/fk7qFZW3OuiUDeg==" crossorigin="anonymous"></script>
-<style>
-/*! * Waves v0.7.5 * http://fian.my.id/Waves * * Copyright 2014-2016 Alfiana E. Sibuea and other contributors * Released under the MIT license * https://github.com/fians/Waves/blob/master/LICENSE */ .waves-effect { position: relative; cursor: pointer; display: inline-block; overflow: hidden; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; } .waves-effect .waves-ripple { position: absolute; border-radius: 50%; width: 100px; height: 100px; margin-top: -50px; margin-left: -50px; opacity: 0; background: rgba(0, 0, 0, 0.3); background: -webkit-radial-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: -o-radial-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: -moz-radial-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: radial-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 60%, rgba(255, 255, 255, 0) 70%); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property: -moz-transform, opacity; -o-transition-property: -o-transform, opacity; transition-property: transform, opacity; -webkit-transform: scale(0) translate(0, 0); -moz-transform: scale(0) translate(0, 0); -ms-transform: scale(0) translate(0, 0); -o-transform: scale(0) translate(0, 0); transform: scale(0) translate(0, 0); pointer-events: none; } .waves-effect.waves-light .waves-ripple { background: rgba(255, 255, 255, 0.3); background: -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: -o-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: -moz-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0) 70%); background: radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0) 70%); } .waves-effect.waves-classic .waves-ripple { background: rgba(0, 0, 0, 0.3); } .waves-effect.waves-classic.waves-light .waves-ripple { background: rgba(255, 255, 255, 0.3); } .waves-notransition { -webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important; } .waves-button, .waves-circle { -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); } .waves-button, .waves-button:hover, .waves-button:visited, .waves-button-input { white-space: nowrap; vertical-align: middle; cursor: pointer; border: none; outline: none; color: inherit; background-color: rgba(0, 0, 0, 0); font-size: 1em; line-height: 1em; text-align: center; text-decoration: none; z-index: 1; } .waves-button { padding: 0.85em 1.1em; border-radius: 0.3em; } .waves-button-input { margin: 0; padding: 0.85em 1.1em; } .waves-input-wrapper { border-radius: 0.3em; vertical-align: bottom; } .waves-input-wrapper.waves-button { padding: 0; } .waves-input-wrapper .waves-button-input { position: relative; top: 0; left: 0; z-index: 1; } .waves-circle { text-align: center; width: 2.5em; height: 2.5em; line-height: 2.5em; border-radius: 50%; } .waves-float { -webkit-mask-image: none; -webkit-box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12); box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12); -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; transition: all 300ms; } .waves-float:active { -webkit-box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3); box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3); } .waves-block { display: block; }
-* {
-    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
-    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
-}
+  <head>
+    <title>ManuTheCoder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.0.0/dist/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.nice-select {
-  -webkit-tap-highlight-color: transparent;
-  background-color: #fff;
-  border-radius: 5px;
-  border: solid 1px #e8e8e8;
-  box-sizing: border-box;
-  clear: both;
-  cursor: pointer;
-  display: block;
-  float: left;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  height: 42px;
-  line-height: 40px;
-  outline: none;
-  padding-left: 18px;
-  padding-right: 30px;
-  position: relative;
-  text-align: left !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  white-space: nowrap;
-  width: 100%; }
-  .nice-select:hover {
-    border-color: #dbdbdb; }
-  .nice-select:active, .nice-select.open, .nice-select:focus {
-    border-color: #999; }
-  .nice-select:after {
-    border-bottom: 2px solid #999;
-    border-right: 2px solid #999;
-    content: '';
-    display: block;
-    height: 5px;
-    margin-top: -4px;
-    pointer-events: none;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-            transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    width: 5px; }
-  .nice-select.open:after {
-    -webkit-transform: rotate(-135deg);
-        -ms-transform: rotate(-135deg);
-            transform: rotate(-135deg); }
-  .nice-select.open .list {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transform: scale(1) translateY(0);
-        -ms-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0); }
-  .nice-select.disabled {
-    border-color: #ededed;
-    color: #999;
-    pointer-events: none; }
-    .nice-select.disabled:after {
-      border-color: #cccccc; }
-  .nice-select.wide {
-    width: 100%; }
-    .nice-select.wide .list {
-      left: 0 !important;
-      right: 0 !important; }
-  .nice-select.right {
-    float: right; }
-    .nice-select.right .list {
-      left: auto;
-      right: 0; }
-  .nice-select.small {
-    font-size: 12px;
-    height: 36px;
-    line-height: 34px; }
-    .nice-select.small:after {
-      height: 4px;
-      width: 4px; }
-    .nice-select.small .option {
-      line-height: 34px;
-      min-height: 34px; }
-  .nice-select .list {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
-    box-sizing: border-box;
-    margin-top: 4px;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    -webkit-transform-origin: 50% 0;
-        -ms-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-    -webkit-transform: scale(0.75) translateY(-21px);
-        -ms-transform: scale(0.75) translateY(-21px);
-            transform: scale(0.75) translateY(-21px);
-    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    z-index: 9; }
-    .nice-select .list:hover .option:not(:hover) {
-      background-color: transparent !important; }
-  .nice-select .option {
-    cursor: pointer;
-    font-weight: 400;
-    line-height: 40px;
-    list-style: none;
-    min-height: 40px;
-    outline: none;
-    padding-left: 18px;
-    padding-right: 29px;
-    text-align: left;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-      background-color: #f6f6f6; }
-    .nice-select .option.selected {
-      font-weight: bold; }
-    .nice-select .option.disabled {
-      background-color: transparent;
-      color: #999;
-      cursor: default; }
-
-.no-csspointerevents .nice-select .list {
-  display: none; }
-
-.no-csspointerevents .nice-select.open .list {
-  display: block; }
-:root {
-  --primary-color: #302AE6;
-  --secondary-color: #536390;
-  --font-color: #424242;
-  --bg-color: #fff;
-  --heading-color: #292922;
-}
-
-[data-theme=dark] {
-  --primary-color: #9A97F3;
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #303030;
-  --heading-color: #818cab;
-}
-.card {
-    background: rgba(255,255,255,.1)
-}
-.sidebar {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-}
-.container {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  overflow:hidden;
-  margin: 0;
-}
-* {
-    text-decoration: none;
-    font-family: 'Source Code Pro', monospace;
-}
-.image {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  margin: 0
-}
-.card {
-    display: inline-block;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    width: 23%;
-    margin-bottom: 10px;
-}
-.button:focus {
-    background: #313131
-}
-.button { border:0;outline:0;display: block; position: relative; box-sizing: border-box; background: #212121; width: 250px; height: 50px; text-align: center; text-decoration: none; color: white; font-family: "Open Sans"; cursor: pointer; -webkit-transform: skew(-30deg); -moz-transform: skew(-30deg); -o-transform: skew(-30deg); } .button > div { -webkit-transform: skew(30deg); -moz-transform: skew(30deg); -o-transform: skew(30deg); } .button::before { content: ''; display: block; position: absolute; top: 0; right: calc(100.5% + 3px); width: calc(0.5% + 2px); height: 100%; background: inherit; }
-.overlay { position: absolute; bottom: 0; left: 0; right: 0; background-color: #212121 !important; overflow: hidden; width: 100%; height: 100%; -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); opacity:0; -webkit-transition: .1s ease; transition: .1s ease; } .container:hover .overlay,.container:focus .overlay { outline:0;-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); opacity:1; } .text { color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; } .nav { position: fixed; top:0; left: 0; background: black; color: white; width: 100%; z-index: 99999999; height: 60px; } .nav a { color: white; display: inline-block; padding: 20px 10px; border: 0 !important; margin: 0 !important; line-height: auto !important } body { padding-top: 60px; margin: 0; }
- @media only screen and (max-width: 900px) {.card {width: 30%} .hide {display: none !important}}
- @media only screen and (max-width: 600px) {.card {width: 48%} .hide {display: none !important}}
- @media only screen and (max-width: 500px) {.card {width: 90%} .hide {display: none !important}}
-.card-content {
-    padding: 10px
-}
-* {box-sizing: border-box;outline:0;}
-.container-div{margin:0 auto;max-width:1280px;width:90%}
-@media only screen and (min-width: 601px){
-    .container-div{
-        width:85%
-    }
-}
-@media only screen and (min-width: 993px){
-    .container-div {
-        width:70%
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      :root {
+        --bg-color: white;
+        --nav-color: rgba(255,255,255,.9);
+        --font-color: black;
+        --nav-a-color: gray
+      }
+      .waves-ripple {
+          transition-duration: .6s !important;
+          transition-timing-function: linear !important
+      }
+      body {
+        background: var(--bg-color);
+        padding-top: 65px;
+        color: var(--font-color)
+      }
+      * {
+        font-family: 'Lexend', sans-serif;
+      }
+      nav {
+        background: var(--nav-color);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top:0;
+        z-index: 2;
+        left:0;
+      }
+      .card {
+        height: 290px;
+      }
+      nav a {
+        color: var(--nav-a-color) !important;
+      }
+      footer {
+        background: #212121 !important
+      }
+      .___svgbackdrop {
+        width: 100%;
+        position: absolute;
+        top:0;
+        height: 100vh;
+        overflow: hidden;
+        left:0;
+        background-attachment: fixed;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(33%2c 33%2c 33%2c 1)'%3e%3c/rect%3e%3cpath d='M562.1735385799713-103.54913628397904L465.12502407671843-3.052457607517013 565.6217027531804 93.99605689573579 662.6702172564333-6.5006217807262345z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M788.147656532954 624.4978128574932L912.4073831418756 486.7576170188005 754.401311817955 450.27904114539024z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1096.02 545.7 a168.96 168.96 0 1 0 337.92 0 a168.96 168.96 0 1 0 -337.92 0z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1231.55 171.72 a115.92 115.92 0 1 0 231.84 0 a115.92 115.92 0 1 0 -231.84 0z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M353.3802485448604 487.0409283600401L479.2942441443034 530.3965939445616 522.6499097288249 404.4825983451187 396.73591412938197 361.12693276059713z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M858.4912462526785 415.82407470016335L993.2137866415242 341.146151127915 918.5358630692758 206.42361073906926 783.8133226804301 281.10153431131766z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+ background-size: cover;
+        background-repeat: no-repeat;
+        z-index:-9999;
+      }
+      a .card {color: black}
+      a {color: inherit}
+      .modal.bottom-sheet {
+        width: 90%;
+        margin: auto;
+        min-height: 90%;
+        background: var(--bg-color)
+      }
+      .card .waves-ripple {
+        transition-duration: .3s !important;
+        padding: 15px;
+      }
+      .meter {
+        width: 100%;
+        overflow: hidden;
+        height: 20px;
+        margin-bottom: 10px;
+        transform: skew(-20deg);
+      }
+      .bar {
+        /* transform: skew(-20deg); */
+        height: 20px;
+        background: #010101;
+        text-align:center;
+        color:white;
+      }
+      @media only screen and (max-width: 600px) {
+        .modal.bottom-sheet {
+          width: 100%;
+          min-height: 100%
         }
-}
-.column {
-  float: left;
-  width: 33.33%;
-}
-footer a {
-    color: gray;
-    display: block;
-    padding: 10px;
-}
-footer a:hover,footer a:focus,.nav a:focus {
-    background: rgba(255,255,255,.1);
-    outline:0;
-}
-footer a:active {
-    background: rgba(255,255,255,.2)
-}
-.copyright {
-    background: rgba(0,0,0,0.2);
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-footer {
-    width: 100%;
-    background:  #141414;
-    padding: 10px;
-    padding-bottom: 0;
-    color: white
-}
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+        h1 {
+          font-size: 40px;
+          margin-top: 0;
+        }
+        .card {
+          height: 350px;
+        }
+        #s {
+          padding-top: 30vh !important
+        }
+        .___svgbackdrop {
+          height: 80vh
+        }
+        .container .row {
+          margin-top: 0 !important
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+  <ul id="slide-out" class="sidenav">
+       <li><div class="user-view">
+      <div class="background">
+        <img src="https://i.pinimg.com/736x/39/41/8f/39418fc243f36ed2e972f162190e89a8.jpg">
+      </div>
+      <a href="#name"><span class="white-text name">Menu</span></a>
+      <a href="#name"><span class="white-text email">ManuTheCoder</span></a>
+    </div></li>
+    <li><a href="#project" class="waves-effect mosdal-trigger">Projects</a></li>
+    <li><a href="#ABOUT" class="waves-effect sidenav-close modal-trigger">About</a></li>
+    <li><a href="#modal1" class="waves-effect sidenav-close modal-trigger">Contact</a></li>
+  </ul>
+    <nav>
+      <ul class="hide-on-small-only">
+        <li><a href="#">ManuTheCoder</a></li>
+      </ul>
+      <ul class="show-on-small-only">
+        <li><a href="#" data-target="slide-out" class="sidenav-trigger" style="margin-left: 0 !important"><i class="material-icons left">menu</i>ManuTheCoder</a></li>
+      </ul>
+      <ul class="right hide-on-small-only">
+        <li><a href="#project" class="mosdal-trigger">Projects</a></li>
+        <li><a href="#ABOUT" class="modal-trigger">About</a></li>
+        <li><a href="#modal1" class="modal-trigger">Contact</a></li>
+      </ul>
+    </nav> 
+    <div class="___svgbackdrop">
+    </div>
+    <div class="container" style="min-height: 1000px">
+      <div class="row" style="margin-top: 10vh">
+        <div class="col s12 m6" style="color:white;padding-top: 10vh;">
+          <p data-aos="fade-up">Hello, </p>
+          <h1 data-aos="fade-up" data-aos-delay="200">I'm ManuTheCoder</h1>
+          <p data-aos="fade-up" data-aos-delay="400">Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!</p>
+        </div>
+        <div class="col s12 m6 hide-on-small-only" style="padding: 10px;padding-top: 60px;">
+          <img src="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4" width="300px" style="margin: auto;border-radius:999px;float:right" data-aos="fade-up" data-aos-delay="400">
+        </div>
+      </div>
+      <div style="padding-top: 30vh" id="s">
+        <h4 class="center">
+          My Projects
+        </h4>
+        <div class="row" id="project">
+          <div class="col s12 m4">
+            <a href="#/projects/smartlist">
+            <div class="card waves-effect" id="sm" data-aos="fade-up" onclick="modal_open('Smartlist', 'Smartlist is a home inventory app that lets you keep track of what you have in your home, wherever you are. You can become way more productive by using this app. <br> <br>Smartlist originally started as &quot;KeepInventory&quot;, which was very basic. It then moved to an app called &quot;Homebase&quot;, and had a couple more features, such as user accounts and budget meters. Now, in &quot;Smartlist&quot;, not only do you get to keep track of what you have in your home, you can also: <br><br><li>Organize Events</li><li>Finish tasks quickly</li><li>Keep track ow what you need using the grocery list<li>And so much more!</li><br> Smartlist, like all other apps is free of cost, and the user interface is very friendly, since I used the principles of Material Design to make the website/app. We have a <a href=\'https://community.smartlist.ga\'>support forum</a>, and <a href=\'https://help.smartlist.ga\'>knowledge base</a>', 'https://smartlist.ga', 'https://i.ibb.co/2kSY71Q/e.png')">
+              <div class="card-image"><img src="https://i.ibb.co/2kSY71Q/e.png" alt="Image"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  Smartlist
+                </span>
+                <p> The high-end sophisticated home inventory app built for all families </p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+          <a href="#/projects/webcode">
+            <div id="wc" class="card waves-effect" data-aos="fade-up" data-aos-delay="200" onclick="modal_open('WebCode', 'An online Coding IDE for people who are stuck with Chromebooks, and can\'t install VScode. Or who want to make a quick project. Kinda like JSFiddle!<br> <br><b>Features</b><br><br><li>Publish and share code</li><li>Code HTML, CSS, and JavaScript</li><li>Save code</li><li>View in full-screen mode</li><li>View in page view</li><li>Keyboard Shortcuts</li><li>Dark mode</li><li>Quick copy-paste CDNs</li><li>Download Code</li><li>Quick access to MDN, GitHub, and Stack overflow</li><li>And more!</li>', 'https://webcode.rf.gd', 'https://i.ibb.co/c82YfXj/b7110bd8-aee0-4b8b-b940-62f50f3cf1cb.png')">
+              <div class="card-image"><img src="https://i.ibb.co/c82YfXj/b7110bd8-aee0-4b8b-b940-62f50f3cf1cb.png" alt="Image"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  WebCode
+                </span>
+                <p>Stuck with a chromebook, and still want to master HTML, CSS, JavaScript, and React in no time? </p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <a href="#/projects/dynamic-poll">
+            <div id="dp" class="card waves-effect" data-aos="fade-up" data-aos-delay="400" onclick="modal_open('Dynamic Poll', 'Dynamic poll is a simple polling app made because teachers are sometimes struggling to make desecions in the virtual classroom during the COVID-19 pandemic!<br><br>Features:<br><br><li>Teachers can create polls</li><li>Students can vote on polls</li><li>Students get to view poll results in graphs and charts visually</li><li>Fireworks and sound effects</li><li>Teachers can use this in live classes</li><li>Share to Google Classroom</li>', 'https://poll.rf.gd', 'https://i.ibb.co/ZxN88cy/Screenshot-2021-03-24-2-51-18-PM.png')">
+              <div class="card-image"><img src="https://i.ibb.co/ZxN88cy/Screenshot-2021-03-24-2-51-18-PM.png" alt="Image"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  Dynamic Poll
+                </span>
+                <p>A simple polling app made for both schools and offices because of the COVID-19 pandemic</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+        <a href="#/projects/schoolnerd">
+            <div class="card waves-effect" id="sn" data-aos="fade-up" onclick=" modal_open('Schoolnerd', '<img src=\'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/418/524/datas/medium.png\' width=\'40px\' style=\'margin: 5px;border-radius:999px;vertical-align:middle\'><span>This project was the winner of <a href=\'https://hackor.devpost.com\'>HackOR 2021 competition</a></span><br><br><br><iframe width=768 height=543 src=https://www.youtube.com/embed/Htmh2pFLGws title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe><p>Schoolnerd is a more fun alternative for Google classroom and Canvas that <em>not only makes virtual learning fun for students</em>, it even <em>simplifies it for teachers!</em></p> <p>We found our teachers struggling with <em>zoom links</em>, <em>announcements</em>, <em>grading</em>, and even <em>assignments</em>, and we felt bad for them! So, this is why we made this app!</p>>Inspiration</h6> <p>We got inspired by this project when we wanted a better version of google classroom which was fun for students.</p> <p>We also thought the UI design of Canvas is really bad, so we made a Material Design version of Canvas/Google Classroom</p> <p>This app lets teachers give assignments to students very simply. Teachers and students create posts and comment on them.</p>  <p>We used HTML, CSS, JS, PHP, and SQL to make this project. We got a free domain name from &quot;Freenom&quot;, and we set up a web server and started hosting our site.</p> <p>The main challenge was that the web server was down for a couple of hours. We couldn\'t access any files, or do anything! Also, due to DNS propagation, we had to wait a couple of hours before editing the site.</p> <h6>Accomplishments that we\'re proud of</h6> <p>1 - Teachers can create classes - We\'re really proud of that feature, and by far, it was the hardest thing to do</p> <p>2 - The user interface is neat, simple and organized. - By utilizing elements and principles of Material Design, we were able to create a website that incorporates components and animations that makes the overall experience smooth</p> <p>3 - Teachers can use it easily - Remember - the main goal of this app is to make virtual learning <em>fun</em> and <em>easy for teachers</em></p>  <p>We learned how to:</p> <ul> <li>Set up an SQL Server</li> <li>The <code>intval()</code> function in PHP</li> <li>>PHP PDO</a> - Immune against SQL Injection Attacks</li> <li>How to create a domain email </li> </ul>', 'https://schoolnerd.ml', 'http://unblast.com/wp-content/uploads/2020/05/Back-to-School-Illustration.jpg') ">
+            <div class="card-image"><img src="https://legalsarcasm.com/wp-content/uploads/2020/08/modern-school-building-with-school-bus_40816-707.jpg" alt="http://unblast.com/wp-content/uploads/2020/05/Back-to-School-Illustration.jpg"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/418/524/datas/medium.png" width="20px" style="float:right;border-radius:999px" data-position="right" class="tooltipped" title="Winner of HackOR 2021">Schoolnerd
 
-/* Container for skill bars */
-.container-bars {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-  border-radius: 99999px;
+                </span>
+                <p>Smart and easy classroom managment.</p>
+                <br> 
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m4">
+           <a href="#/projects/docjs">
+            <div class="card waves-effect" id="dj" data-aos="fade-up" data-aos-delay="200" onclick="modal_open('DocJS', 'DocJS is a documentation generator with no external dependencies. It relies on Pure JS, and workes in IE!<br><br>DocJS uses very minimalistic code to make a beautiful single-page documentation page. DocJS relies on markdown for formatting, making it easier to write pages! You can also use HTML instead if you wish You can easily host this type of documentation on GitHub pages, or if you want on your hosting provider. See the Custom Host section for more details.', 'https://docjs.pages.dev', 'https://i.ibb.co/09nzd4p/index.png')">
+              <div class="card-image"><img src="https://i.ibb.co/09nzd4p/index.png" alt="https://i.ibb.co/09nzd4p/index.png"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  DocJS
+                </span>
+                <p>A documentation generator using Pure JavaScript!</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <div class="card waves-ef fect" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-image"><img src="https://blackmorepartnersinc.com/wp-content/uploads/2017/07/executive-search-banner-1.jpg" alt="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYW13b3JrfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80"></div>
+              <div class="card-content">
+                <span class="card-title">
+                  Teamly
+                </span>
+                <p>Smart and easy team managment.</p>
+                <br> 
+                Coming Soon!!!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="programming-langs">
+       <h4 class="center">
+         Programming Languages I specialize in
+       </h4>
+       <p>These are the test scores from W3schools</p>
+       <span data-aos="fade-right">HTML</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 100%">100%</div></div>
+       <span data-aos="fade-right">CSS</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 100%">100%</div></div>
+       <span data-aos="fade-right">JavaScript</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 90%">90%</div></div>
+       <span data-aos="fade-right">PHP</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 87%">87%</div></div>
+       <span data-aos="fade-right">SQL</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 97%">97%</div></div>
+       <span data-aos="fade-right">React</span>
+       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 10%">10%</div></div>
+       <p style="font-size: 10px;color:gray" data-aos="fade-right">If you're wondering why I got so low, I didn't take the test, and I just started learning this lol</p>
+      </div>
+    </div>
+        <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">ManuTheCoder</h5>
+            <p class="grey-text text-lighten-4">I'm a full-stack developer and a DevOps engineer. </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/manuthecoder">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Stacky</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://dev.to/manuthecoder">DEV community</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://forum.infinityfree.net/u/manuthecoder/summary">InfinityFree</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://smartlist.ga/">Smartlist</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://poll.rf.gd/">Dynamic Poll</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://todoapp.rf.gd/">Todo List</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://webcode.rf.gd/">WebCode</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright" style="background:rgba(255,255,255,.1)">
+        <div class="container">
+          © 2021 Copyright
+        </div>
+      </div>
+    </footer>
+        <div id="modal1" class="bottom-sheet modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Contact</h4>
+        <p>Discord: ManuTheCoder#5821<br>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83ebe6efefecc3ebeceee6e1e2f0e6adf1e5ade4e7">[email&#160;protected]</a>
+        <form id="my-form" action="https://formspree.io/f/mqkwzlog" method="POST">
+          <div class="input-field">
+            <label>Name</label>
+            <input type="text" name="name" autocomplete="off" />
+          </div>
+          <div class="input-field">
+            <label>Email:</label>
+            <input type="email" name="email" required autocomplete="off" />
+          </div>
+          <div class="input-field">
+            <label>Message:</label>
+            <textarea type="text" name="message" class="materialize-textarea" required autocomplete="off"></textarea>
+          </div>
+          <button id="my-form-button" class="btn" style="background: #263238;">Submit</button>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+      <div id="popup" class="modal bottom-sheet modals-fixed-footer">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col s12 m8">
+              <b><h2 id="title"></h2></b>
+              <div id='tags'></div>
+              <p id="desc"></p>
+            </div>
+            <div class="col s12 m4">
+              <center><img id="img" class="hide-on-small-only" width="100%" style="margin: auto;"><br><br></center>
+              <a href="#" class="btn btn-lsarge waves-effect waves-light blue-grey darken-3" target="_blank" id="btn" style="width: 100%;">Visit</a><br><br>
+              <a href="#modal1" class="modal-trigger btn btn-lsarge waves-effect waves-blue" id="btn1" style="margin-top: 10px;box-shadow:none !important;border: 1.5px solid #1e88e5;background:transparent !important;color:black;width: 100%;">Contact me</a>
+              <a href="#!" class="modal-close btn btn-lsarge waves-effect waves-red" id="btn2" style="margin-top: 10px;box-shadow:none !important;border: 1.5px solid #e53935;background:transparent !important;color:black;width: 100%;">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="ABOUT" class="modal bottom-sheet modal-fixed-footer">
+    <div class="modal-content">
+      <h4>About</h4>
+      <p style="font-size: 20px;line-height: 30px;">Hi! My name is Manu, and I'm a junior full-stack developer and DevOps Engineer. I'm 13 years old, and live in California, USA. My hobbies are coding, playing Minecraft, and watching Star Trek. I have watched the original series, all of the movies, and some of the next generation episodes.<br> <br><b>Captain's log stardate 2017.0</b> (4th grade)<br>I started my journey in 2017, using scratch to code games. I made mini projects, and started using Weebly and Wix to make websites.<br><br><b>Captain's log stardate 2018.0</b> (5th grade)<br> I was tired of wix, and I went on exploring HTML, CSS, and JavaScript to make actual websites. My very first website was about books and was called "ReadQuest". <br><br><b>Captain's log stardate 2020.0</b> (6th grade)<br> I continued learning HTML, CSS, and JS, and was having fun exploring GitHub, and Stack Overflow. In late 6th grade (Around the time COVID-19 hit USA), I started learning PHP, and SQL, mainly because I wanted to create a "user account system" for my app. I then realized that this language was fun to learn, and I kept on playing around with it's logic and functions. Around the time school ended, I got an idea of a home inventory app called "KeepInventory". During the summer break, I was coding the entire app. Thank god this year is over. <br><br><b>Captain's log stardate 2021.0</b> (7th grade)<br> I have started learning about React, and it's components. It's a very interesting language to learn. I also have learned AJAX in the process. In March, I won my first hackathon called HackOR (see the project "SchoolNerd" for more details) !!! Over the past few months, I have been coding apps, mini apps, and improvising my current ones! I'm glad Dr. McCoy [doctors] have produced vaccines for COVID!</p>
 
-}
-.modal-content {
-    background: var(--bg-color) !important
-}
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 2px; /* Add top padding */
-  padding-bottom: 2px; /* Add bottom padding */
-  padding-right: 10px;
-  color: white; /* White text color */
-  border-radius: 99999px;
-  animation: skill 1s forwards;
-  animation-delay: 1s;
-  width: 0;
-}
-
-@keyframes skill {
-    0% {
-        width:0;
-    }
-}
-.html {width: 100%; background-color: #4CAF50;} /* Green */
-.css {width: 95%; background-color: #2196F3;} /* Blue */
-.js {width: 70%; background-color: #f44336;} /* Red */
-.php {width: 90%; background-color: #808080;} /* Dark Grey */
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-a {
-    color: #0091ff
-}
-#poll a:hover {
-    text-decoration: underline
-}
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999999999999999999999999999;
-    background: rgba(0,0,0,.3);
-    display:none;
-}
-.modal-content {
-    margin: auto;
-    background: white;
-    padding: 10px;
-    margin-top: 50px;
-    width: 50vw;
-    animation: content .2s forwards;
-     max-height: calc(100vh - 100px);
-    overflow: scroll
-}
-@keyframes content {
-    0% {
-        opacity: 0;
-        transform: scaleX(.9)
-    }
-}
-input,textarea,select {
-    padding: 10px;
-    border:0;
-    transition: all .2s;
-    border-bottom: 2px solid #eee;
-    background: var(--bg-color);
-    color: var(--font-color)
-}
-input:focus,textarea:focus,select:focus {
-    border-bottom: 2px solid teal
-}
-select option {
-    cursor: pointer;
-    background: var(--bg-color);
-    color: var(--font-color)
-}
-select {
-    cursor: pointer
-}
-body {
-    background: var(--bg-color);
-    color: var(--font-color)
-}
-.sidenav {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-	display: none;
-height: 100%;
-background: rgba(0,0,0,0.3);
-z-index: 999999999999999999999999999999999;
-}
-.sidenav-content {
-position: fixed;
-top: 0;
-left: 0;
-width: 300px;
-height: 100%;
-background: var(--bg-color);
-overflow-y: scroll;
-	margin-left: -310px;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-z-index: 999999999999999999999999999999999;
-transition: all .3s;
-}
-.background img {
-width: 100%;
-height: 180px;
-}
-.background-content img {
-width: 25%;
-border-radius: 999999999999999999px;
-}
-.background-content {
-margin-top: -140px;
-margin-left: 20px;
-}
-.background-content h3, .background-content h4 {
-margin: 5px;
-font-family: arial;
-color: white;
-}
-.sidenav a {
-display: block;
-width: 100%;
-padding: 10px;
-color: var(--font-color);
-text-decoration:none;
-margin: 0;
-transition: all .2s;
-}
-* {box-sizing: border-box}
-.sidenav a:focus {
-background: #eee;
-}
-.sidenav-main {
-margin-top: 16px;
-}
-</style>
-</head>
-<body>
-<div class="nav">
-<a href="#" onclick="openNav()" class="waves-effect waves-light"><i class="material-icons" style="font-size: inherit;position: relative;bottom: -2px;margin-right: 10px;">menu</i>ManuTheCoder</a>
-<a href="https://manuthecoder.ga" class="waves-effect waves-light hide">Home</a>
-
-<a href="#" class="waves-effect waves-light hide" onclick="document.getElementById('contact').style.display='block'">Contact</a>
-<a href="https://manuthecoder.ga/about" class="waves-effect waves-light hide">About</a>
-<a href="https://manuthecoder.ga/projects" class="waves-effect waves-light hide">Projects</a>
-<a href="https://manuthecoder.ga/impact" class="waves-effect waves-light hide">Impact</a>
-
-</div>
-  <div class="theme-switch-wrapper">
-       <label class="theme-switch" for="checkbox">
-    <input type="checkbox" id="checkbox" style="width: 0;height:0;" />
-    <div class="slider round"></div>
-   
-<nav style="position: fixed;bottom: 10px; right: 10px;background: black;padding: 20px;border-radius: 999999px;z-index: 999" onclick="document.getElementById('checkbox').click">
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-  </label>
+      <p class="center gray-text"><i><b>Captain's log stardate unknown. The future is yet to come (lol)</b></i></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+    </div>
   </div>
+          <div class="bottom-sheet modal modal-fixed-footer" id="project1">
+            <div class="modal-content"></div>
+          </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.0.0/dist/js/materialize.min.js"></script>
+    <script>
+       window.onerror = function(msg, url, linenumber) {
+        alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+        return true;
+      }
 
-</nav>  
-<div id="contact" class="modal">
-<div class="modal-content">
-<span style="float:right;display: inline-block;cursor: pointer" onclick="document.getElementById('contact').style.display='none'"><i class="material-icons">close</i></span>
-<h2>Contact</h2>
-<div class="cognito">
-<script src="https://www.cognitoforms.com/s/qIHIAs0UWECGDBOG4anZwg"></script>
-<script>Cognito.load("forms", { id: "9" });</script>
-</div>
-</div>
-</div>
-
- <div class="sidenav">
-<div class="sidenav-content">
-<a><h3>ManuTheCoder</h3></a>
-<div class="sidenav-main" style="margin:0 !important;">
-<a href="https://manuthecoder.ga" class="waves-effect">Home</a>
-<a href="https://manuthecoder.ga/about" class="waves-effect">About</a>
-<a href="https://manuthecoder.ga/projects" class="waves-effect">Projects</a>
-<a href="https://manuthecoder.ga/impact" class="waves-effect">Impact</a>
-<hr>
-<a><h3 style="margin:0;">Other links</h3></a>
-<a class="waves-effect" href="https://smartlist.ga">Smartlist</a><a class="waves-effect" href="https://todoapp.rf.gd">Todolist</a><a class="waves-effect" href="https://poll.rf.gd">Dynamic Poll</a><a class="waves-effect" href="https://webcode.rf.gd">WebCode</a><a class="waves-effect" href="http://material-design-pro.hostman.site/">Material Design Pro</a><a class="waves-effect" href="http://sjscustomcakes.ga/">SJ'S Custom Cakes</a><a class="waves-effect" href="https://todoapp.rf.gd/dev">CodeTricks</a><a class="waves-effect" href="https://codepen.io/ManuTheCoder/pen/OJRoBrO">Material Design Starter Template!</a><a class="waves-effect" href="https://codepen.io/ManuTheCoder/pen/VwjKxpw?editors=0100">Windows 10 simulator</a><a class="waves-effect" href="https://homebase.rf.gd/playground/zoom-simulator/">Mini zoom prank simulator ;) </a>
-<a><h3 style="margin:0">Social</h3></a>
-<a class="waves-effect" href="http://github.com/manuthecoder">GitHub</a><a class="waves-effect" href="https://forum.infinityfree.net/u/manuthecoder">InfinityFree</a><a class="waves-effect" href="https://stackoverflow.com/users/14711231255/manuthecoder">Stack Overflow</a><a class="waves-effect" href="http://dev.to/manuthecoder">DEV.to</a><a class="waves-effect" href="https://community.cloudflare.com/u/ManuTheCoder">CF community</a><a class="waves-effect" href="https://hashnode.com/@ManuTheCoder">Hashnode</a><a class="waves-effect" href="http://manuthecoder.github.io/">Previous version of website</a><a class="waves-effect" href="http://scratch.mit.edu/users/manuthecoder">lol, scratch</a>
-</div>
-</div>
-</div>
-<div tabindex="0" class="container-div">
-<h1 id="demo"></h1>
-<p id="desc"></p>
-        <button class=" button waves-effect waves-light" style="width: 150px;margin-left: 10px;"><div>LEARN MORE</div></button>
-<div style="text-align:left" id="poll"><br><hr>
-<a href="https://poll.rf.gd/vote/44" style="float:right">Vote Now!</a>Hey! Are you a developer? Take this 5-second poll on<br> your favorite coding language using my app! 
-<br><hr>
-</div>
-<h2>My Featured Projects!</h2>
-<div style="text-align:center">
-<div class="card">
-<a href="https://smartlist.ga">
-<div tabindex="0" class="container  waves-effect waves-light">
-  <img src="https://i.ibb.co/W6J0GDn/Screenshot-2021-02-03-at-2-22-53-PM-2.jpg" alt="Avatar" class="image">
-  <div class="overlay et_pb_asbutton">
-    <div class="text">Smartlist</div>
-  </div>
-</div>
-</a>
-
-<div class="card-content">
-<h4>Smartlist</h4>
-</div>
-</div>
-<div class="card">
-<a href="https://todoapp.rf.gd"><div tabindex="0" class="container waves-effect waves-light">
-  <img src="https://i.ibb.co/vxQRk3r/Screenshot-2021-02-12-at-9-53-56-AM.jpg" alt="Avatar" class="image">
-  <div class="overlay et_pb_asbutton">
-    <div class="text">Todolist</div>
-  </div>
-</div>
-</a>
-<div class="card-content">
-<h4>Todolist</h4>
-</div>
-</div>
-<div class="card">
-<a href="https://webcode.rf.gd"><div tabindex="0" class="container waves-effect waves-light">
-  <img src="https://i.ibb.co/XFxg2Tq/Screenshot-2021-02-12-at-10-08-32-AM.jpg" alt="Avatar" class="image">
-  <div class="overlay et_pb_asbutton">
-    <div class="text">WebCode</div>
-  </div>
-</div>
-</a>
-<div class="card-content">
-<h4>WebCode</h4>
-</div>
-</div>
-<div class="card">
-<a href="https://poll.rf.gd"><div tabindex="0" class="container waves-effect waves-light">
-  <img src="https://i.ibb.co/C5vH1SM/Screenshot-2021-02-12-at-11-26-48-AM.jpg" alt="Avatar" class="image">
-  <div class="overlay et_pb_asbutton">
-    <div class="text">Dynamic Poll</div>
-  </div>
-</div>
-</a>
-<div class="card-content">
-<h4>WebCode</h4>
-</div>
-</div>
-</div>
-<h2>Coding languages I specialize in</h2>
-<p>HTML</p>
-<div class="container-bars">
-  <div class="skills html">100%</div>
-</div>
-
-<p>CSS</p>
-<div class="container-bars">
-  <div class="skills css">95%</div>
-</div>
-
-<p>JavaScript</p>
-<div class="container-bars">
-  <div class="skills js">70%</div>
-</div>
-
-<p>PHP</p>
-<div class="container-bars">
-  <div class="skills php">90%</div>
-</div>
-<br><br>
-</div>
-
-<script>
-var i = 0;
-var ai = 0;
-var txt = 'Making the internet a better place.';
-var desc = 'Hi! My name is Manu, and my mission is to make the internet a better place by coding apps that help everyone!';
-var speed = 90;
-var speed1 = 10;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-function typeWriter1() {
-  if (ai < desc.length) {
-    document.getElementById("desc").innerHTML += desc.charAt(ai);
-    ai++;
-    setTimeout(typeWriter1, speed1);
-  }
-}
-typeWriter();
-typeWriter1();
-</script>
-<footer>
-<div class="row">
-  <div class="column"><h2>ManuTheCoder</h2><p>A young developer who loves to code both frontend and backend</p></div>
-  <div class="column"><h3>Projects</h3><a href="https://smartlist.ga">Smartlist</a><a href="https://todoapp.rf.gd">Todolist</a><a href="https://poll.rf.gd">Dynamic Poll</a><a href="https://webcode.rf.gd">WebCode</a><a href="http://material-design-pro.hostman.site/">Material Design Pro</a><a href="http://sjscustomcakes.ga/">SJ'S Custom Cakes</a><a href="https://todoapp.rf.gd/dev">CodeTricks</a><a href="https://codepen.io/ManuTheCoder/pen/OJRoBrO">Material Design Starter Template!</a><a href="https://codepen.io/ManuTheCoder/pen/VwjKxpw?editors=0100">Windows 10 simulator</a><a href="https://homebase.rf.gd/playground/zoom-simulator/">Mini zoom prank simulator ;) </a></div>
-  <div class="column"><h3>Links</h3><a href="http://github.com/manuthecoder">GitHub</a><a href="https://forum.infinityfree.net/u/manuthecoder">InfinityFree</a><a href="https://stackoverflow.com/users/14711231255/manuthecoder">Stack Overflow</a><a href="http://dev.to/manuthecoder">DEV.to</a><a href="https://community.cloudflare.com/u/ManuTheCoder">CF community</a><a href="https://hashnode.com/@ManuTheCoder">Hashnode</a><a href="http://manuthecoder.github.io/">Previous version of website</a><a href="http://scratch.mit.edu/users/manuthecoder">lol, scratch</a></div>
-</div>
-<div class="copyright">&copy; 2021 ManuTheCoder</div>
-</footer>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src="https://jqueryniceselect.hernansartorio.com/js/jquery.nice-select.min.js"></script>
-
-<script>
-Waves.attach('.et_pb_button', ['waves-button']);
-Waves.init();
-$(document).keydown(function(e) {
-     if (e.key === "Escape") { // escape key maps to keycode `27`
-        document.getElementById('contact').style.display='none'
-    }
-});
-setTimeout(function(){
-  $('select').niceSelect();
-    document.getElementsByTagName('select')[0].classList.add("wide");
-}, 3000);
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
-
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-    }    
-}
-var sidenavclose = document.querySelector(".sidenav-close");
-var content = document.querySelector(".sidenav-content");
-function closeNav(){
-document.querySelector(".sidenav-content").style.marginLeft = "-310px";
-setTimeout(function(){ document.querySelector(".sidenav").style.display = "none";}, 0400);
-};
-function openNav() {
-	document.querySelector(".sidenav").style.display = "block";
-	setTimeout(function(){ document.querySelector(".sidenav-content").style.marginLeft = "0";}, 0300);
-
-	document.querySelector(".sidenav").onclick = function(event) {
-  if (event.target != content) {
-closeNav();
-	}
-	}
-}
-
-$( document ).on( 'keydown', function ( e ) {
-    if ( e.keyCode === 27 ) { // ESC
-        closeNav();
-    }
-});
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-// Credits W3schools
-document.addEventListener("touchstart", startTouch, false);
-document.addEventListener("touchmove", moveTouch, false);
- 
-// Swipe Up / Down / Left / Right
-var initialX = null;
-var initialY = null;
- 
-function startTouch(e) {
-  initialX = e.touches[0].clientX;
-  initialY = e.touches[0].clientY;
-};
- 
-function moveTouch(e) {
-  if (initialX === null) {
-    return;
-  }
- 
-  if (initialY === null) {
-    return;
-  }
- 
-  var currentX = e.touches[0].clientX;
-  var currentY = e.touches[0].clientY;
- 
-  var diffX = initialX - currentX;
-  var diffY = initialY - currentY;
- 
-  if (Math.abs(diffX) > Math.abs(diffY)) {
-    // sliding horizontally
-    if (diffX > 0) {
-      // swiped left
-closeNav();
-    } else {
-      // swiped right
-openNav();
-		}  
-  } else {
-    // sliding vertically
-    if (diffY > 0) {
-      // swiped up
-      console.log("swiped up");
-    } else {
-      // swiped down
-      console.log("swiped down");
-    }  
-  }
- 
-  initialX = null;
-  initialY = null;
-   
-  e.preventDefault();
-};
-</script>
-</body>
+      AOS.init();
+      // var enteredDate = 2008;
+      // var years = new Date().getFullYear() - enteredDate;
+      // document.getElementById('years').innerHTML = years;
+      $(document).ready(function(){
+        $('.modal').modal( {
+            onCloseEnd: function() {window.location.href="#/"}
+        });
+        $('.tooltipped').tooltip();
+        $('.sidenav').sidenav();
+      });
+      function modal_open(title, data, url, img) {
+        setTimeout(function(){  $('#popup').modal('open');}, 300);
+        document.getElementById('title').innerHTML = title;
+        document.getElementById('desc').innerHTML = data;
+        document.getElementById('img').src = img;
+        document.getElementById('btn').href = url;
+        document.getElementById('tags').innerHTML = '';
+        if(img == 'https://i.ibb.co/FDqN0Vh/sm.png') {
+          document.getElementById('img').style.width = '50%'
+        }
+        else {
+           document.getElementById('img').style.width = '100%'
+        }
+      }
+      var form = document.getElementById("my-form");
+       async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("modal1").getElementsByClassName('modal-content')[0];
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          status.innerHTML = "<center><img src='https://i.pinimg.com/originals/e1/6f/73/e16f73c8290a000a261d54fea57a80d0.png'><br>Thanks for your submission! I'll get back to you in a day (At most a week). Thank you!</center>";
+          form.reset()
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+      var __hash = window.location.hash.replace('#/', '');
+      if(__hash == 'about') {
+          window.addEventListener('load', function() {
+                $('#ABOUT').modal('open');
+          })
+      }
+      else if(__hash == 'projects/smartlist') {
+          window.addEventListener('load', function() {
+                document.getElementById('sm').click()
+          })
+      }
+      else if(__hash == 'projects/webcode') {
+          window.addEventListener('load', function() {
+                document.getElementById('wc').click()
+          })
+      }
+      else if(__hash == 'projects/schoolnerd') {
+          window.addEventListener('load', function() {
+                document.getElementById('sn').click()
+          })
+      }
+      else if(__hash == 'projects/dynamic-poll') {
+          window.addEventListener('load', function() {
+                document.getElementById('dp').click()
+          })
+      }
+      else if(__hash == 'projects/docjs') {
+          window.addEventListener('load', function() {
+                document.getElementById('dj').click()
+          })
+      }
+      else if(__hash == 'contact') {
+          window.addEventListener('load', function() {
+                $('#modal1').modal('open')
+          })
+      }
+    </script>
+  </body>
 </html>
