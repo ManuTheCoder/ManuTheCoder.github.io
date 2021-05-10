@@ -1,450 +1,627 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>ManuTheCoder</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.0.0/dist/css/materialize.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <meta name="keywords" content="ManuTheCoder, Manuthecoder projects, Projects by manu, manu, manusvath gurudath, manuthecoders project, menuthecoder, manuthecoders bio, ManuTheCoder's Bio">
-    <!-- Primary Meta Tags -->
-<title>ManuTheCoder</title>
-<meta name="title" content="ManuTheCoder">
-<meta name="description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://metatags.io/">
-<meta property="og:title" content="ManuTheCoder">
-<meta property="og:description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://metatags.io/">
-<meta property="twitter:title" content="ManuTheCoder">
-<meta property="twitter:description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
-<meta property="twitter:image" content="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="title" content="ManuTheCoder">
+    <meta name="description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manuthecoder.ml/">
+    <meta property="og:title" content="ManuTheCoder">
+    <meta charset="UTF-8">
+    <meta property="og:description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://manuthecoder.ml/">
+    <meta property="twitter:title" content="ManuTheCoder">
+    <meta property="twitter:description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4">
     <style>
-      :root {
-        --bg-color: white;
-        --nav-color: rgba(255,255,255,.9);
-        --font-color: black;
-        --nav-a-color: gray
-      }
-      .waves-ripple {
-          transition-duration: .6s !important;
-          transition-timing-function: linear !important
-      }
-      body {
-        background: var(--bg-color);
-        padding-top: 65px;
-        color: var(--font-color)
-      }
       * {
-        font-family: 'Lexend', sans-serif;
+        box-sizing: border-box
       }
+
+      .center {
+        text-align: center;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-weight: 100
+      }
+
       nav {
-        background: var(--nav-color);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top:0;
-        z-index: 2;
-        left:0;
+        padding: 10px;
       }
-      .card {
-        height: 290px;
+
+      #main {
+        padding: 10px;
+      }
+
+      .row {
+        height: auto
+      }
+
+      a {
+        text-decoration: none
+      }
+
+      .s4 {
+        width: 33.333%
+      }
+
+      #articles a {
+        color: #303030;
+        font-size: 20px
+      }
+
+      nav ul {
+        padding: 0;
+      }
+
+      nav li {
+        list-style-type: none;
+        display: inline
+      }
+      .modal-footer {border-top: 1px solid rgba(0,0,0,0.1);padding: 5px;height: 50px}
+      .right {float:right;}
+      .left  {float: left;}
+      .modal {
+        position: fixed;
+        transform: scale(.9) translate(-50%, -50%);
+        margin: auto;
+        width: 50vw;
+        top: 50vh;
+        left: 50vw;
+        transform-origin: left top;
+        opacity:0;
+        display: none;
+        z-index:999999999999999999 !important;
+        transition: transform .2s, opacity .2s;
+        box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.4);
+        background: white;
+      }
+      @media only screen and (max-width: 992px) {
+        .modal {
+          width: 90%;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        .hide-on-desktop {
+          display: none
+        }
+      }
+      .modal-content {
+        padding: 10px 20px;
+      }
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        height: 100%;
+        z-index:9991;
+        background: #212121;
+        transition: all .2s;
+        background: rgba(0,0,0,0.3)
       }
       nav a {
-        color: var(--nav-a-color) !important;
+        color: #303030;
+        text-decoration: none;
+        padding: 10px
       }
+
       footer {
-        background: #212121 !important
+        text-align: center;
+        background: #f3f4f5;
       }
-      .___svgbackdrop {
-        width: 100%;
-        position: absolute;
-        top:0;
-        height: 100vh;
-        overflow: hidden;
-        left:0;
-        background-attachment: fixed;
-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(33%2c 33%2c 33%2c 1)'%3e%3c/rect%3e%3cpath d='M562.1735385799713-103.54913628397904L465.12502407671843-3.052457607517013 565.6217027531804 93.99605689573579 662.6702172564333-6.5006217807262345z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M788.147656532954 624.4978128574932L912.4073831418756 486.7576170188005 754.401311817955 450.27904114539024z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1096.02 545.7 a168.96 168.96 0 1 0 337.92 0 a168.96 168.96 0 1 0 -337.92 0z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1231.55 171.72 a115.92 115.92 0 1 0 231.84 0 a115.92 115.92 0 1 0 -231.84 0z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M353.3802485448604 487.0409283600401L479.2942441443034 530.3965939445616 522.6499097288249 404.4825983451187 396.73591412938197 361.12693276059713z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M858.4912462526785 415.82407470016335L993.2137866415242 341.146151127915 918.5358630692758 206.42361073906926 783.8133226804301 281.10153431131766z' fill='rgba(101%2c 101%2c 101%2c 0.6)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
- background-size: cover;
-        background-repeat: no-repeat;
-        z-index:-9999;
-      }
-      a .card {color: black}
-      a {color: inherit}
-      .modal.bottom-sheet {
-        width: 90%;
-        margin: auto;
-        min-height: 90%;
-        background: var(--bg-color)
-      }
-      .card .waves-ripple {
-        transition-duration: .3s !important;
-        padding: 15px;
-      }
-      .meter {
-        width: 100%;
-        overflow: hidden;
-        height: 20px;
+
+      .icon {
+        display: inline-block;
+        padding: 5px;
         margin-bottom: 10px;
-        transform: skew(-20deg);
       }
-      .bar {
-        /* transform: skew(-20deg); */
-        height: 20px;
-        background: #010101;
-        text-align:center;
-        color:white;
+
+      .icon:active svg {
+        color: grey
       }
-      @media only screen and (max-width: 600px) {
-        .modal.bottom-sheet {
-          width: 100%;
-          min-height: 100%
+
+      * {
+        font-family: 'Nunito', sans-serif;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%
+      }
+
+      h1 {
+        font-size: 40px;
+        letter-spacing: -1;
+        line-height: 38px
+      }
+
+      button {
+        font-weight: 400;
+        border-radius: 999999999px;
+        transition: transform .2s, opacity .2s, box-shadow .2s;
+        border: 0;
+        padding: 0 30px;
+        line-height: 40px;
+        background: #0097a7;
+        color: white;
+        outline: 0;
+        cursor: pointer;
+        box-shadow: 0 2px 15px rgba(0, 151, 167, .3);
+        user-select: none;
+        margin-right: 5px
+      }
+
+      button:hover {
+        box-shadow: 0 2px 20px rgba(0, 151, 167, .3);
+        opacity: .9
+      }
+
+      button:active {
+        transform: translateY(2px)
+      }
+
+      .white {
+        background: #ebf4f5;
+        color: black;
+        box-shadow: none
+      }
+
+      .white:hover {
+        box-shadow: none
+      }
+
+      @media only screen and (min-width: 601px) {
+        .container {
+          width: 85%
         }
-        h1 {
-          font-size: 40px;
-          margin-top: 0;
+      }
+
+      .m12 {
+        padding: 10px;
+      }
+
+      #articles .card {
+        height: 100px;
+        padding: 15px !important
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      #visual {
+        margin-top: 10px
+      }
+
+      .content {
+        height: 170px
+      }
+
+      .card {
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: all .2s;
+        display: inline-block;
+      }
+
+      .visit_btn {
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform .2s;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: white;
+        background-color: #303030;
+      }
+
+      .card:focus {
+        outline: 0;
+        box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.97), 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .visit_btn:hover {
+        opacity: .9;
+      }
+
+      .card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px)
+      }
+
+      footer a {
+        text-decoration: none;
+        color: #303030;
+        margin: 10px
+      }
+
+      @media only screen and (min-width: 993px) {
+        .container {
+          width: 70%
+        }
+      }
+
+      h4 {
+        font-size: 20px
+      }
+
+      @media only screen and (max-width: 800px) {
+        .m12 {
+          width: 100% !important
         }
         .card {
-          height: 350px;
+          height: auto !important
         }
-        #s {
-          padding-top: 30vh !important
+      }
+
+      .right {
+        float: right
+      }
+
+      b {
+        font-weight: 800
+      }
+
+      .col {
+        float: left;
+      }
+
+      h2 {
+        font-size: 30px
+      }
+
+      .s6 {
+        width: 50%
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .spacer {
+        margin-top: 50px
+      }
+      .btn-flat {
+        padding: 10px;
+        color: #303030;
+      }
+      .btn-flat:hover {
+        background: #eee
+      }
+
+      .btn-flat {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        padding: 0 8px;
+        min-width: 64px;
+        vertical-align: middle;
+        text-align: center;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+        background-color: transparent;
+        font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 36px;
+        overflow: hidden;
+        outline: none;
+        cursor: pointer;
+      }
+      .btn-flat::-moz-focus-inner {
+        border: none;
+      }
+
+      /* Overlay */
+      .btn-flat::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: currentColor;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+
+      /* Hover, Focus */
+      .btn-flat:hover::before {
+        opacity: 0.04;
+      }
+
+      .btn-flat:focus::before {
+        opacity: 0.12;
+      }
+
+      .btn-flat:hover:focus::before {
+        opacity: 0.16;
+      }
+
+      /* Active */
+      .btn-flat:active::after {
+        opacity: 0.16;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0s;
+      }
+
+      /* Disabled */
+      .btn-flat:disabled {
+        color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+        background-color: transparent;
+        cursor: initial;
+      }
+      @keyframes fade-up {
+        0% {
+          opacity: 0;
         }
-        .___svgbackdrop {
-          height: 80vh
+        100% {
+          opacity: 1
         }
-        .container .row {
-          margin-top: 0 !important
-        }
+      }
+
+      .image img {
+        width: 100%
       }
     </style>
   </head>
-  <body>
-    
-  <ul id="slide-out" class="sidenav">
-       <li><div class="user-view">
-      <div class="background">
-        <img src="https://i.pinimg.com/736x/39/41/8f/39418fc243f36ed2e972f162190e89a8.jpg">
-      </div>
-      <a href="#name"><span class="white-text name">Menu</span></a>
-      <a href="#name"><span class="white-text email">ManuTheCoder</span></a>
-    </div></li>
-    <li><a href="#project" class="waves-effect mosdal-trigger">Projects</a></li>
-    <li><a href="#ABOUT" class="waves-effect sidenav-close modal-trigger">About</a></li>
-    <li><a href="#modal1" class="waves-effect sidenav-close modal-trigger">Contact</a></li>
-  </ul>
-    <nav>
-      <ul class="hide-on-small-only">
-        <li><a href="#">ManuTheCoder</a></li>
-      </ul>
-      <ul class="show-on-small-only">
-        <li><a href="#" data-target="slide-out" class="sidenav-trigger" style="margin-left: 0 !important"><i class="material-icons left">menu</i>ManuTheCoder</a></li>
-      </ul>
-      <ul class="right hide-on-small-only">
-        <li><a href="#project" class="mosdal-trigger">Projects</a></li>
-        <li><a href="#ABOUT" class="modal-trigger">About</a></li>
-        <li><a href="#modal1" class="modal-trigger">Contact</a></li>
-      </ul>
-    </nav> 
-    <div class="___svgbackdrop">
-    </div>
-    <div class="container" style="min-height: 1000px">
-      <div class="row" style="margin-top: 10vh">
-        <div class="col s12 m6" style="color:white;padding-top: 10vh;">
-          <p data-aos="fade-up">Hello, </p>
-          <h1 data-aos="fade-up" data-aos-delay="200">I'm ManuTheCoder</h1>
-          <p data-aos="fade-up" data-aos-delay="400">Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!</p>
-        </div>
-        <div class="col s12 m6 hide-on-small-only" style="padding: 10px;padding-top: 60px;">
-          <img src="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4" width="300px" style="margin: auto;border-radius:999px;float:right" data-aos="fade-up" data-aos-delay="400">
-        </div>
-      </div>
-      <div style="padding-top: 30vh" id="s">
-        <h4 class="center">
-          My Projects
-        </h4>
-        <div class="row" id="project">
-          <div class="col s12 m4">
-            <a href="#/projects/smartlist">
-            <div class="card waves-effect" id="sm" data-aos="fade-up" onclick="modal_open('Smartlist', 'Smartlist is a home inventory app that lets you keep track of what you have in your home, wherever you are. You can become way more productive by using this app. <br> <br>Smartlist originally started as &quot;KeepInventory&quot;, which was very basic. It then moved to an app called &quot;Homebase&quot;, and had a couple more features, such as user accounts and budget meters. Now, in &quot;Smartlist&quot;, not only do you get to keep track of what you have in your home, you can also: <br><br><li>Organize Events</li><li>Finish tasks quickly</li><li>Keep track ow what you need using the grocery list<li>And so much more!</li><br> Smartlist, like all other apps is free of cost, and the user interface is very friendly, since I used the principles of Material Design to make the website/app. We have a <a href=\'https://community.smartlist.ga\'>support forum</a>, and <a href=\'https://help.smartlist.ga\'>knowledge base</a>', 'https://smartlist.ga', 'https://i.ibb.co/2kSY71Q/e.png')">
-              <div class="card-image"><img src="https://i.ibb.co/2kSY71Q/e.png" alt="Image"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  Smartlist
-                </span>
-                <p> The high-end sophisticated home inventory app built for all families </p>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col s12 m4">
-          <a href="#/projects/webcode">
-            <div id="wc" class="card waves-effect" data-aos="fade-up" data-aos-delay="200" onclick="modal_open('WebCode', 'An online Coding IDE for people who are stuck with Chromebooks, and can\'t install VScode. Or who want to make a quick project. Kinda like JSFiddle!<br> <br><b>Features</b><br><br><li>Publish and share code</li><li>Code HTML, CSS, and JavaScript</li><li>Save code</li><li>View in full-screen mode</li><li>View in page view</li><li>Keyboard Shortcuts</li><li>Dark mode</li><li>Quick copy-paste CDNs</li><li>Download Code</li><li>Quick access to MDN, GitHub, and Stack overflow</li><li>And more!</li>', 'https://webcode.rf.gd', 'https://i.ibb.co/c82YfXj/b7110bd8-aee0-4b8b-b940-62f50f3cf1cb.png')">
-              <div class="card-image"><img src="https://i.ibb.co/c82YfXj/b7110bd8-aee0-4b8b-b940-62f50f3cf1cb.png" alt="Image"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  WebCode
-                </span>
-                <p>Stuck with a chromebook, and still want to master HTML, CSS, JavaScript, and React in no time? </p>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col s12 m4">
-            <a href="#/projects/dynamic-poll">
-            <div id="dp" class="card waves-effect" data-aos="fade-up" data-aos-delay="400" onclick="modal_open('Dynamic Poll', 'Dynamic poll is a simple polling app made because teachers are sometimes struggling to make desecions in the virtual classroom during the COVID-19 pandemic!<br><br>Features:<br><br><li>Teachers can create polls</li><li>Students can vote on polls</li><li>Students get to view poll results in graphs and charts visually</li><li>Fireworks and sound effects</li><li>Teachers can use this in live classes</li><li>Share to Google Classroom</li>', 'https://poll.rf.gd', 'https://i.ibb.co/ZxN88cy/Screenshot-2021-03-24-2-51-18-PM.png')">
-              <div class="card-image"><img src="https://i.ibb.co/ZxN88cy/Screenshot-2021-03-24-2-51-18-PM.png" alt="Image"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  Dynamic Poll
-                </span>
-                <p>A simple polling app made for both schools and offices because of the COVID-19 pandemic</p>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col s12 m4">
-        <a href="#/projects/schoolnerd">
-            <div class="card waves-effect" id="sn" data-aos="fade-up" onclick=" modal_open('Schoolnerd', '<img src=\'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/418/524/datas/medium.png\' width=\'40px\' style=\'margin: 5px;border-radius:999px;vertical-align:middle\'><span>This project was the winner of <a href=\'https://hackor.devpost.com\'>HackOR 2021 competition</a></span><br><br><br><iframe width=768 height=543 src=https://www.youtube.com/embed/Htmh2pFLGws title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe><p>Schoolnerd is a more fun alternative for Google classroom and Canvas that <em>not only makes virtual learning fun for students</em>, it even <em>simplifies it for teachers!</em></p> <p>We found our teachers struggling with <em>zoom links</em>, <em>announcements</em>, <em>grading</em>, and even <em>assignments</em>, and we felt bad for them! So, this is why we made this app!</p>>Inspiration</h6> <p>We got inspired by this project when we wanted a better version of google classroom which was fun for students.</p> <p>We also thought the UI design of Canvas is really bad, so we made a Material Design version of Canvas/Google Classroom</p> <p>This app lets teachers give assignments to students very simply. Teachers and students create posts and comment on them.</p>  <p>We used HTML, CSS, JS, PHP, and SQL to make this project. We got a free domain name from &quot;Freenom&quot;, and we set up a web server and started hosting our site.</p> <p>The main challenge was that the web server was down for a couple of hours. We couldn\'t access any files, or do anything! Also, due to DNS propagation, we had to wait a couple of hours before editing the site.</p> <h6>Accomplishments that we\'re proud of</h6> <p>1 - Teachers can create classes - We\'re really proud of that feature, and by far, it was the hardest thing to do</p> <p>2 - The user interface is neat, simple and organized. - By utilizing elements and principles of Material Design, we were able to create a website that incorporates components and animations that makes the overall experience smooth</p> <p>3 - Teachers can use it easily - Remember - the main goal of this app is to make virtual learning <em>fun</em> and <em>easy for teachers</em></p>  <p>We learned how to:</p> <ul> <li>Set up an SQL Server</li> <li>The <code>intval()</code> function in PHP</li> <li>>PHP PDO</a> - Immune against SQL Injection Attacks</li> <li>How to create a domain email </li> </ul>', 'https://schoolnerd.ml', 'http://unblast.com/wp-content/uploads/2020/05/Back-to-School-Illustration.jpg') ">
-            <div class="card-image"><img src="https://legalsarcasm.com/wp-content/uploads/2020/08/modern-school-building-with-school-bus_40816-707.jpg" alt="http://unblast.com/wp-content/uploads/2020/05/Back-to-School-Illustration.jpg"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/418/524/datas/medium.png" width="20px" style="float:right;border-radius:999px" data-position="right" class="tooltipped" title="Winner of HackOR 2021">Schoolnerd
 
-                </span>
-                <p>Smart and easy classroom managment.</p>
-                <br> 
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col s12 m4">
-           <a href="#/projects/docjs">
-            <div class="card waves-effect" id="dj" data-aos="fade-up" data-aos-delay="200" onclick="modal_open('DocJS', 'DocJS is a documentation generator with no external dependencies. It relies on Pure JS, and workes in IE!<br><br>DocJS uses very minimalistic code to make a beautiful single-page documentation page. DocJS relies on markdown for formatting, making it easier to write pages! You can also use HTML instead if you wish You can easily host this type of documentation on GitHub pages, or if you want on your hosting provider. See the Custom Host section for more details.', 'https://docjs.pages.dev', 'https://i.ibb.co/09nzd4p/index.png')">
-              <div class="card-image"><img src="https://i.ibb.co/09nzd4p/index.png" alt="https://i.ibb.co/09nzd4p/index.png"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  DocJS
-                </span>
-                <p>A documentation generator using Pure JavaScript!</p>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col s12 m4">
-            <div class="card waves-ef fect" data-aos="fade-up" data-aos-delay="400">
-              <div class="card-image"><img src="https://blackmorepartnersinc.com/wp-content/uploads/2017/07/executive-search-banner-1.jpg" alt="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYW13b3JrfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80"></div>
-              <div class="card-content">
-                <span class="card-title">
-                  Teamly
-                </span>
-                <p>Smart and easy team managment.</p>
-                <br> 
-                Coming Soon!!!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="programming-langs">
-       <h4 class="center">
-         Programming Languages I specialize in
-       </h4>
-       <p>These are the test scores from W3schools</p>
-       <span data-aos="fade-right">HTML</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 100%">100%</div></div>
-       <span data-aos="fade-right">CSS</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 100%">100%</div></div>
-       <span data-aos="fade-right">JavaScript</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 90%">90%</div></div>
-       <span data-aos="fade-right">PHP</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 87%">87%</div></div>
-       <span data-aos="fade-right">SQL</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 97%">97%</div></div>
-       <span data-aos="fade-right">React</span>
-       <div class="meter"><div class="bar" data-aos="slide-right" style="width: 10%">10%</div></div>
-       <p style="font-size: 10px;color:gray" data-aos="fade-right">If you're wondering why I got so low, I didn't take the test, and I just started learning this lol</p>
-      </div>
-    </div>
-        <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">ManuTheCoder</h5>
-            <p class="grey-text text-lighten-4">I'm a full-stack developer and a DevOps engineer. </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/manuthecoder">GitHub</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Stacky</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://dev.to/manuthecoder">DEV community</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://forum.infinityfree.net/u/manuthecoder/summary">InfinityFree</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://smartlist.ga/">Smartlist</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://poll.rf.gd/">Dynamic Poll</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://todoapp.rf.gd/">Todo List</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://webcode.rf.gd/">WebCode</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright" style="background:rgba(255,255,255,.1)">
-        <div class="container">
-          © 2021 Copyright
-        </div>
-      </div>
-    </footer>
-        <div id="modal1" class="bottom-sheet modal modal-fixed-footer">
+  <body data-aos="fade-in">
+    <div id="contact" class="modal">
       <div class="modal-content">
-        <h4>Contact</h4>
-        <p>Discord: ManuTheCoder#5821<br>Email: hello@homebase.rf.gd
-        <form id="my-form" action="https://formspree.io/f/mqkwzlog" method="POST">
-          <div class="input-field">
-            <label>Name</label>
-            <input type="text" name="name" autocomplete="off" />
-          </div>
-          <div class="input-field">
-            <label>Email:</label>
-            <input type="email" name="email" required autocomplete="off" />
-          </div>
-          <div class="input-field">
-            <label>Message:</label>
-            <textarea type="text" name="message" class="materialize-textarea" required autocomplete="off"></textarea>
-          </div>
-          <button id="my-form-button" class="btn" style="background: #263238;">Submit</button>
-          <p id="my-form-status"></p>
-        </form>
+        <h4>Modal Content</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <a class="btn-flat right" href="#" onclick="modal.close('contact')">Close</a>
       </div>
-    </div>
-      <div id="popup" class="modal bottom-sheet modals-fixed-footer">
-        <div class="modal-content">
-          <div class="row">
-            <div class="col s12 m8">
-              <b><h2 id="title"></h2></b>
-              <div id='tags'></div>
-              <p id="desc"></p>
-            </div>
-            <div class="col s12 m4">
-              <center><img id="img" class="hide-on-small-only" width="100%" style="margin: auto;"><br><br></center>
-              <a href="#" class="btn btn-lsarge waves-effect waves-light blue-grey darken-3" target="_blank" id="btn" style="width: 100%;">Visit</a><br><br>
-              <a href="#modal1" class="modal-trigger btn btn-lsarge waves-effect waves-blue" id="btn1" style="margin-top: 10px;box-shadow:none !important;border: 1.5px solid #1e88e5;background:transparent !important;color:black;width: 100%;">Contact me</a>
-              <a href="#!" class="modal-close btn btn-lsarge waves-effect waves-red" id="btn2" style="margin-top: 10px;box-shadow:none !important;border: 1.5px solid #e53935;background:transparent !important;color:black;width: 100%;">Close</a>
+    </div>  
+    <nav>
+      <div class="container" style="width: 90%">
+        <ul>
+          <li class="right"><a href="#">About</a></li>
+          <li><a href="#">ManuTheCoder</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+            <p class="fade-up">Hi! I'm Manu 👋 </p>
+            <h1 class="fade-up" style="animation-delay: 100ms"><b>I'm a full stack developer who loves to <span style="color: #00c853">code!</span></b> </h1>
+            <p class="fade-up" style="animation-delay: 200ms">Welcome! I believe that the world can become a better place by coding! All my projects are <i>free and open source to anyone and everyone!</i> </p>
+            <button class="fade-up" style="animation-delay: 300ms">View Projects</button>
+            <button class="white fade-up" style="animation-delay: 400ms" onclick="modal.open('contact')">Contact</button>
+          </div>
+          <div class="col s6">
+            <div class="container">
+              <img src="https://i.ibb.co/rfhZBX9/my-Avatar-1.png" width="100%" class="right">
             </div>
           </div>
         </div>
       </div>
-        <div id="ABOUT" class="modal bottom-sheet modal-fixed-footer">
-    <div class="modal-content">
-      <h4>About</h4>
-      <p style="font-size: 20px;line-height: 30px;">Hi! My name is Manu, and I'm a junior full-stack developer and DevOps Engineer. I'm 13 years old, and live in California, USA. My hobbies are coding, playing Minecraft, and watching Star Trek. I have watched the original series, all of the movies, and some of the next generation episodes.<br> <br><b>Captain's log stardate 2017.0</b> (4th grade)<br>I started my journey in 2017, using scratch to code games. I made mini projects, and started using Weebly and Wix to make websites.<br><br><b>Captain's log stardate 2018.0</b> (5th grade)<br> I was tired of wix, and I went on exploring HTML, CSS, and JavaScript to make actual websites. My very first website was about books and was called "ReadQuest". <br><br><b>Captain's log stardate 2020.0</b> (6th grade)<br> I continued learning HTML, CSS, and JS, and was having fun exploring GitHub, and Stack Overflow. In late 6th grade (Around the time COVID-19 hit USA), I started learning PHP, and SQL, mainly because I wanted to create a "user account system" for my app. I then realized that this language was fun to learn, and I kept on playing around with it's logic and functions. Around the time school ended, I got an idea of a home inventory app called "KeepInventory". During the summer break, I was coding the entire app. Thank god this year is over. <br><br><b>Captain's log stardate 2021.0</b> (7th grade)<br> I have started learning about React, and it's components. It's a very interesting language to learn. I also have learned AJAX in the process. In March, I won my first hackathon called HackOR (see the project "SchoolNerd" for more details) !!! Over the past few months, I have been coding apps, mini apps, and improvising my current ones! I'm glad Dr. McCoy [doctors] have produced vaccines for COVID!</p>
-
-      <p class="center gray-text"><i><b>Captain's log stardate unknown. The future is yet to come (lol)</b></i></p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
-    </div>
-  </div>
-          <div class="bottom-sheet modal modal-fixed-footer" id="project1">
-            <div class="modal-content"></div>
+      <br>
+      <br>
+      <div class="center">
+        <br>
+        <h2 class="center">
+          Projects
+        </h2>
+        <div class="row container projectContainer">
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  Smartlist
+                </h4>
+                <p>
+                  Smartlist is a home inventory app whick lets you keep track of what you have in your home for free
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
           </div>
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  Devlist
+                </h4>
+                <p>
+                  Devlist is a todo list app made for developers to keep track of their projects &amp; become organized.
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  OnlineFTP
+                </h4>
+                <p>
+                  OnlineFTP is an in-browser FTP that lets you edit files on your server in the browser on any device
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container projectContainer">
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  DocJS
+                </h4>
+                <p>
+                  DocJS is a documentation generator for your website using pure JS, no external dependencies
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  Dynamic Poll
+                </h4>
+                <p>
+                  Dynamic Poll is a polling app made for both schools and offices to make group decisions easy
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content">
+                <h4>
+                  WebCode
+                </h4>
+                <p>
+                  Webcode is an online coding playground that lets you code HTML, CSS, JS in your browser, even on a chromebook
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#" class="visit_btn">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container center">
+        <h2>
+          Recent Posts
+        </h2>
+        <p>
+          On dev.to
+        </p>
+        <div id="articles" class="row"></div>
+      </div>
+    </main>
+    <svg id="visual" style="margin-bottom: -10px" viewBox="0 0 100% 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 65L83.3 74.5C166.7 84 333.3 103 500 114.8C666.7 126.7 833.3 131.3 1000 123.8C1166.7 116.3 1333.3 96.7 1500 94.8C1666.7 93 1833.3 109 1916.7 117L2000 125L2000 201L1916.7 201C1833.3 201 1666.7 201 1500 201C1333.3 201 1166.7 201 1000 201C833.3 201 666.7 201 500 201C333.3 201 166.7 201 83.3 201L0 201Z" fill="#f3f4f5" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    <footer>
+      <a target="_blank" href="https://github.com/manuthecoder">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </div>
+      </a>
+      <a href="mailto:manuthecoder@protonmail.com" target="_blank">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </div>
+      </a>
+      <a href="https://codepen.io/manuthecoder" target="_blank">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
+        </div>
+      </a>
+      <a href="https://discord.gg/ACDzsMQvTz" target="_blank">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+      </a>
+      <a href="https://dev.to/manuthecoder" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+      </a>
+      <br>
+      <div style="padding: 10px;">&copy; 2021 ManuTheCoder</div>
+      <br><br><br>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.0.0/dist/js/materialize.min.js"></script>
     <script>
-       window.onerror = function(msg, url, linenumber) {
-        alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
-        return true;
-      }
-
       AOS.init();
-      // var enteredDate = 2008;
-      // var years = new Date().getFullYear() - enteredDate;
-      // document.getElementById('years').innerHTML = years;
-      $(document).ready(function(){
-        $('.modal').modal( {
-            onCloseEnd: function() {window.location.href="#/"}
-        });
-        $('.tooltipped').tooltip();
-        $('.sidenav').sidenav();
-      });
-      function modal_open(title, data, url, img) {
-        setTimeout(function(){  $('#popup').modal('open');}, 300);
-        document.getElementById('title').innerHTML = title;
-        document.getElementById('desc').innerHTML = data;
-        document.getElementById('img').src = img;
-        document.getElementById('btn').href = url;
-        document.getElementById('tags').innerHTML = '';
-        if(img == 'https://i.ibb.co/FDqN0Vh/sm.png') {
-          document.getElementById('img').style.width = '50%'
-        }
-        else {
-           document.getElementById('img').style.width = '100%'
-        }
-      }
-      var form = document.getElementById("my-form");
-       async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("modal1").getElementsByClassName('modal-content')[0];
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            'Accept': 'application/json'
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var articles = JSON.parse(this.responseText);
+          for (var i in articles) {
+            document.getElementById("articles").innerHTML += `
+<div class="col s4" style="padding: 15px">
+<a href="${articles[i].url}" target="_blank" class="card content">${articles[i].title}</a>
+      </div>
+`;
           }
-        }).then(response => {
-          status.innerHTML = "<center><img src='https://i.pinimg.com/originals/e1/6f/73/e16f73c8290a000a261d54fea57a80d0.png'><br>Thanks for your submission! I'll get back to you in a day (At most a week). Thank you!</center>";
-          form.reset()
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
+        }
+      };
+      xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true);
+      xhttp.send();
+      var modal = {
+        open: function(selector) {
+          document.getElementById(selector).style.display = 'block';
+          var x = document.getElementById('modal-overlay');
+          x.style.opacity = 0;
+          x.onclick = function() {modal.close(selector)};
+          setTimeout(function() {
+            x.style.opacity = 1;
+          }, 200)
+          x.style.display = "block";
+          var s = document.getElementById(selector);
+          s.style.opacity = 0;
+          document.body.style.overflow = "hidden";
+          setTimeout(function() {
+            s.style.transform = 'scale(1) translate(-50%, -50%)';
+            s.style.opacity = 1;
+          }, 200)
+        },
+        close: function(selector) {
+          var s = document.getElementById(selector);
+          s.style.opacity = 0;
+          var x = document.getElementById('modal-overlay');
+          x.style.opacity = 0;
+          document.body.style.overflow = "";
+          setTimeout(function() {x.style.display = "none";s.style.display = "none";s.style.transform = "scale(.9) translate(-50%, -50%)";}, 200)
+        },
       }
-      form.addEventListener("submit", handleSubmit)
-      var __hash = window.location.hash.replace('#/', '');
-      if(__hash == 'about') {
-          window.addEventListener('load', function() {
-                $('#ABOUT').modal('open');
-          })
-      }
-      else if(__hash == 'projects/smartlist') {
-          window.addEventListener('load', function() {
-                document.getElementById('sm').click()
-          })
-      }
-      else if(__hash == 'projects/webcode') {
-          window.addEventListener('load', function() {
-                document.getElementById('wc').click()
-          })
-      }
-      else if(__hash == 'projects/schoolnerd') {
-          window.addEventListener('load', function() {
-                document.getElementById('sn').click()
-          })
-      }
-      else if(__hash == 'projects/dynamic-poll') {
-          window.addEventListener('load', function() {
-                document.getElementById('dp').click()
-          })
-      }
-      else if(__hash == 'projects/docjs') {
-          window.addEventListener('load', function() {
-                document.getElementById('dj').click()
-          })
-      }
-      else if(__hash == 'contact') {
-          window.addEventListener('load', function() {
-                $('#modal1').modal('open')
-          })
-      }
+      var sidenav_overlay = document.createElement('div');
+      sidenav_overlay.className = "sidenav-overlay";
+      sidenav_overlay.id = "sidenav-overlay";
+      document.body.appendChild(sidenav_overlay);
+      var modal_overlay = document.createElement('div');
+      modal_overlay.className = "modal-overlay";
+      modal_overlay.id = "modal-overlay";
+      document.body.insertAdjacentElement('beforeend', modal_overlay);
     </script>
   </body>
+
 </html>
